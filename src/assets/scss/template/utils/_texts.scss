@@ -1,0 +1,34 @@
+
+/**
+ * @file utils/mixins/_margins.scss
+ * @desc creates utility classes used for margins
+ */
+@if variable-exists("color-list") {
+    $alias: "text";
+    $property: "color";
+
+    @each $color,$value in $color-list {
+        .text-#{$color} {
+            color: $value;
+        }
+    }
+}
+
+@if variable-exists("text-decoration-list") {
+    $alias: "decoration";
+
+    @each $decoration in $text-decoration-list {
+        .text-#{$alias}-#{$decoration} {
+            text-decoration: $decoration;
+        }
+    }
+}
+@if variable-exists("text-align-list") {
+    $alias: "align";
+
+    @each $align in $text-align-list {
+        .text-#{$alias}-#{$align} {
+            text-align: $align;
+        }
+    }
+}

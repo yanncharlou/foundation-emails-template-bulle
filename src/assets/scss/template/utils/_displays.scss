@@ -1,0 +1,13 @@
+/**
+ * @file utils/mixins/_displays.scss
+ * @desc creates utility classes used for displays
+ */
+
+// $direction-list: @import(/utils/_variables.scss)
+
+@if variable-exists("display-list") {
+    $alias: "d" !default;
+    $property: "display" !default;
+
+    @include create-css-class($alias, $property, $display-list);
+}

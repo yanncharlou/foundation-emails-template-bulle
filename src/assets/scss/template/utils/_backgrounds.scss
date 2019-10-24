@@ -1,0 +1,11 @@
+
+@if variable-exists("color-list") {
+    $alias: "bg";
+    $property:"background-color";
+    @each $color, $value in $color-list {
+       .#{$alias}-#{$color} {
+           background: $value;
+       }
+    }
+   
+}

@@ -1,0 +1,37 @@
+@if variable-exists("border-thickness-list") {
+    @each $border in $border-thickness-list {
+        .border-#{$border} {
+            border-width: #{$border}px;
+        }
+    }
+}
+
+@if variable-exists("border-type-list") {
+    @each $border in $border-type-list {
+        .border-#{$border} {
+            border-style: #{$border};
+        }
+    }
+}
+
+@if variable-exists("color-list") {
+    $alias: "border";
+
+    @each $color,
+    $value in $color-list {
+        .#{$alias}-#{$color} {
+            border-color: $value;
+        }
+    }
+}
+
+@if variable-exists("border-direction-list") && variable-exists("border-thickness-list") && variable-exists("border-type-list") {
+    @each $direction in $border-direction-list {
+        @each $thick in $border-thickness-list {
+                .border-solid-#{$direction}-#{$thick} {
+                    border-#{$direction}-width: #{$thick}px;
+                    border-#{$direction}-style: solid;
+                }
+        }
+    }
+}

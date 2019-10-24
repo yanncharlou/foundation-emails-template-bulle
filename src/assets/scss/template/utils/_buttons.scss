@@ -1,0 +1,17 @@
+
+@if variable-exists("color-list") {
+
+            @each $color in $color-list {
+                .btn.btn-#{$color} {
+                    background-color:$color;
+                    border:1px solid $color;
+                    color:get-color-yiq($color);
+                }
+                .btn.btn-ghost-#{$color} {
+                    background-color:transparent;
+                    border:1px solid $color;
+                    color:$color;
+                }
+            }
+        
+    }

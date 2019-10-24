@@ -1,0 +1,24 @@
+/**
+ * @file _reset.scss
+ * @desc Set attribute to their initial value
+ */
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+th,
+a {
+    color: inherit
+}
+
+th,
+td {
+    font-size: inherit;
+}

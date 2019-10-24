@@ -1,0 +1,14 @@
+
+/**
+ * @file utils/mixins/_margins.scss
+ * @desc creates utility classes used for margins
+ */
+
+// $direction-list: @import(/utils/_variables.scss)
+
+@if variable-exists("margin-list") {
+    $alias: "m" !default;
+    $property: "margin" !default;
+    
+    @include create-css-class($alias, $property, $margin-list);
+}

@@ -1,0 +1,15 @@
+
+/**
+ * @file utils/mixins/_paddings.scss
+ * @desc creates utility classes used for paddings
+ */
+
+ // $direction-list: @import(/utils/_variables.scss)
+
+@if variable-exists("padding-list") {
+    $padding-unit:1px;
+    @include create-css-class("p", "padding", $padding-list, $padding-unit);
+    @include create-css-class("pt", "padding-top", $padding-list, $padding-unit);
+    @include create-css-class("pb", "padding-bottom", $padding-list, $padding-unit);
+    @include create-css-class("pl", "padding-left", $padding-list, $padding-unit);
+}

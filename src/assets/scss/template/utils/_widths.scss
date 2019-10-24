@@ -1,0 +1,7 @@
+@if variable-exists("width-list") {
+    @each $width in $width-list {
+        .width-#{$width} {
+            width: #{$width}px;
+        }
+    }
+}

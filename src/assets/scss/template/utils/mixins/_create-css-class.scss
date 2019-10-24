@@ -1,0 +1,13 @@
+@mixin create-css-class($alias, $property, $list, $unit : false) {
+    @each $item in $list {
+        @if $unit == false {
+            .#{$alias}-#{$item} {
+                #{$property}: $item;
+            }
+        } @else {
+            .#{$alias}-#{$item} {
+                #{$property}: $item * $unit;
+            }
+        }
+    }
+}
