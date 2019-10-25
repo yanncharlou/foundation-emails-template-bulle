@@ -6,4 +6,8 @@ dist
 .sass-cache
 .awspublish*
 config.json
+src/pages/**/*
+src/partials/**/*
+src/assets/img/*
+src/scss/_settings.scss
 
