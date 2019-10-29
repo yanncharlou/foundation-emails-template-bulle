@@ -20,16 +20,16 @@ $secondary:$secondary-color;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #d1162f;
-$light-gray: #F6F5F3;
-$medium-gray: #cacaca;
+$light-gray: #E5E5E5;
+$medium-gray: #424242;
 $dark-gray: #3A3A3A;
 $black: $secondary-color;
 $white: #ffffff;
-$pre-color: #F7852C;
-$global-width: 640px;
+$pre-color:#EA5B0C;
+$global-width: 600px;
 $global-width-small: 95%;
-$global-gutter: 16px;
-$body-background: $white;
+$global-gutter: 32px;
+$body-background: $light-gray;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
@@ -50,8 +50,8 @@ $block-grid-gutter: $global-gutter;
 $global-font-color: $black;
 $body-font-family:
 Arial,
- Helvetica,
-sans-serif;
+ Helvetica;
+
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.3;

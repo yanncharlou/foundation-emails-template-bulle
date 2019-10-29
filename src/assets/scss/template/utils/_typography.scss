@@ -6,9 +6,8 @@
 
 @if variable-exists("typography-list") {
     @each $typography in $typography-list {
-        @if (map-get($typography, "name")) {
 
-            /**
+            /*
              * @desc Generates a text- classname for each pair of fontsize and lineheight defined
              *  @example : 
              *      .text-xs {
@@ -21,7 +20,7 @@
                 line-height: map-get($typography, "lineheight") * 1px;                
             }
 
-            /**
+            /*
              *  @desc Generates a display- classname for each fontsize  defined. Useful when the client or graphist decides to fuck the vertical rythmn.
              * @example : 
              *      .display-xs {
@@ -34,7 +33,7 @@
                 line-height: map-get($typography, "fontsize") * 1px;
             }
 
-            /**
+            /*
              *  @desc Generates a fontsize- classname for each fontsize. 
              * @example:
              *      .fontsize-12 {
@@ -45,5 +44,5 @@
                 font-size: map-get($typography,"fontsize") * 1px;
             }
         }
-    }
+    
 }
