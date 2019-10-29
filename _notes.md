@@ -1,5 +1,25 @@
 ZURB EMAIL FOUNDATION TEST
 ---
+- [ZURB EMAIL FOUNDATION TEST](#zurb-email-foundation-test)
+- [FONCTIONEMENT](#fonctionement)
+    + [GESTION DES PARTIALS](#gestion-des-partials)
+    + [ARCHIVAGE](#archivage)
+- [PROBLEMES RENCONTRÉS](#problemes-rencontr-s)
+  * [VALIDATION W3C](#validation-w3c)
+  * [AWS](#aws)
+  * [MINIFICATION DES CSS DANS LE HEAD](#minification-des-css-dans-le-head)
+  * [CONFUSION ENTRE NPM RUN BUILD et GULP BUILD --production](#confusion-entre-npm-run-build-et-gulp-build---production)
+  * [INSTALLATION](#installation)
+    + [changer le chemin de gulp dans le "package.json"](#changer-le-chemin-de-gulp-dans-le--packagejson-)
+    + [node-sass ne veut pas executer de postinstall](#node-sass-ne-veut-pas-executer-de-postinstall)
+    + [Jpegtran non trouvé (ENOENT)](#jpegtran-non-trouv---enoent-)
+    + [optiPNG non trouvé (ENOENT)](#optipng-non-trouv---enoent-)
+  * [RETOURS](#retours)
+  * [FAQ](#faq)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
 Ce dossier teste le système zurb foundation emails avec le salon MIDEST 2020.
 
@@ -22,6 +42,16 @@ Ce dossier teste le système zurb foundation emails avec le salon MIDEST 2020.
 - besoin de nommer les partials comme suit: ``n[index_de_la_news]/n[index_de_la_news]-[nom_du_partial].hbs``
 - les partials sont ajoutées comme suit: ``{{> n7-topbar}}``. Si le partial se trouve dans un sous dossier, c'est la même syntaxe. Le moteur de template ne gère pas les inclusions de sous dossiers mais gère les inclusions de fichiers même s'ils sont dans des sous-dossiers.
 Les noms de fichiers doivent être uniques.
+
+#### ARCHIVAGE ####
+
+Une fois la news terminée, ne pas oublier d'archiver la news.
+
+- Cela permet d'envoyer seulement la news courante à Emailonacid.
+
+- Cela permet à Gulp de ne surveiller qu'une seule news.
+
+- N'archiver que la section pages, car les partials sont par définition réutilisables à travers les news
 
 
 ## PROBLEMES RENCONTRÉS ##
