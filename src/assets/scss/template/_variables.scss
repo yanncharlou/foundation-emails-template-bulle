@@ -4,7 +4,8 @@
  * @desc Set all font-sizes and its corresponding line-heights used in an exhibition
  */
 $typography-list: (
-        (fontsize:10, lineheight: 18, name: "xxs"),
+        (fontsize:10, lineheight:14, name: "xxxs"),
+        (fontsize:11, lineheight:16, name: "xxs"),
         (fontsize:12, lineheight:18, name: "xs"),
         (fontsize:14, lineheight:20, name: "s"),
         (fontsize:16, lineheight:24, name: "base"),
@@ -12,7 +13,7 @@ $typography-list: (
         (fontsize:20, lineheight:32, name: "h4"),
         (fontsize:24, lineheight:34, name: "h3"),
         (fontsize:36, lineheight:48, name: "h2"),
-        (fontsize:48, lineheight:56, name: "h1")) !default;
+        (fontsize:48, lineheight:56, name: "h1"));
 
 /**
  * @var $margin-list
@@ -36,22 +37,23 @@ $color-list: map-merge((
     secondary:  $secondary-color,
     white:      $white,
     grey100:    $light-gray,
-    grey200:    "#EEEEEE",
-    grey300:    "#DBDBD9",
+    grey200:    #EEEEEE,
+    grey300:    #DBDBD9,
     grey400:    $medium-gray,
-    grey500:    "#3A3A3A",
+    grey500:    #3A3A3A,
     grey900:    $dark-gray,
-    dark:       "#0d0d0d",
+    dark:       #0d0d0d,
     black:      $black,
-    cyan:       "#E8F4FF",
+    cyan:       #E8F4FF,
     green:      $success-color,
+    pink:       #E50052,
     red:        $alert-color,
-    purple:     "#8a157e",
+    purple:     #8a157e,
     orange:     $pre-color,
-    lightgreen: "#96bf0d",
-    olive:      "#dcf0ea",
-    darkblue:   "#24303e",
-    forest:     "#a3d6c9"
+    lightgreen: #96bf0d,
+    olive:      #dcf0ea,
+    darkblue:   #24303e,
+    forest:     #a3d6c9
 ), $color-list);
 
 $direction-list: (
