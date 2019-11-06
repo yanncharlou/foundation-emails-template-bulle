@@ -73,6 +73,12 @@ function reduce() {
         .pipe($.replace("text-align: left;", ''))
         .pipe($.replace("text-align:left;", ''))
         .pipe($.replace('<link rel="stylesheet" type="text/css" href="../css/app.css">', ''))
+        .pipe($.replace(/style="(.+?)"/gim, function (match) {
+            let replaceOne = match.replace(/:\s/gim, ":")
+            let replaceTwo = replaceOne.replace(/;\s/gim, ";")
+            return replaceTwo
+        }))
+        .pipe($.replace("Margin", "margin"))
         //.pipe($.replace("from", 'to'))
         //Modification via Cheerio (à la mode jQuery)
         /*
