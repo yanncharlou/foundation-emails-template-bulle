@@ -107,6 +107,17 @@ Mettre des spacers là ou ca ne se voit pas en desktop.
 
 Afin de prévalualiser les news anciennes, un dossier ``archives/`` qui contient les pages a été créé à la racine du dossier.
 
+### ENVOI DE NEWS SUR CLIENT MAIL ###
+
+Pour éviter un envoi de  toutes les news dans ``pages/``:
+
+```bash
+#npm run mail --news n[NUM_NEWS]
+npm run mail --news n2
+
+# ou yarn run mail --news n[NUM_NEWS]
+yarn run mail --news n2
+```
 
 ### INSTALLATION ###
 
