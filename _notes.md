@@ -95,6 +95,18 @@ gulp.series('build', creds, mail));
 
 - modification dans ``package.json``: ``"build": "gulp build --production",``
 
+### ESPACE POUR AERER EN MOBILE ###
+
+S'il faut mettre de l'espace en mobile pour aérer le contenu, la classe ".hide-for-large" ne marche pas pour google et yahoo.
+Mettre des spacers là ou ca ne se voit pas en desktop.
+
+### ARCHIVAGE DES PAGES ###
+
+- Lors de l'envoi de test emailonacid, toutes les news du dossier ``dist/`` sont envoyées.
+- Lors de la tache de build de gulp, le dossier est d'abord effacé puis les pages sont recompilées dans ``dist/``
+
+Afin de prévalualiser les news anciennes, un dossier ``archives/`` qui contient les pages a été créé à la racine du dossier.
+
 
 ### INSTALLATION ###
 
